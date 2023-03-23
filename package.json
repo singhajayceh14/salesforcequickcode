@@ -1,0 +1,37 @@
+{
+  "name": "salesforcequickcode",
+  "displayName": "Salesforce Quick Code",
+  "description": "Salesforce LWC + JavaScript ES6-11 Quick Code Snippets",
+  "version": "0.0.1",
+  "publisher": "Ajay Singh",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "keywords": [
+		"Salesforce Lightning",
+		"LWC",
+		"Lightning Web Components",
+		"Salesforce",
+		"JavaScript",
+    "Salesforce Code Snippets"
+	],
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/lwcsnippets.json"
+      },
+			{
+				"language": "javascript",
+				"path": "./snippets/jssnippets.json"
+			},
+			{
+				"language": "xml",
+				"path": "./snippets/xmsnippets.json"
+			}
+    ]
+  }
+}

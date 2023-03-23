@@ -1,0 +1,76 @@
+{
+    "LWC targets": {
+        "prefix": "lwc-target",
+        "body": [
+            "<targets>",
+            "\t<target>lightning__RecordPage</target>",
+            "\t<target>lightning__AppPage</target>",
+            "\t<target>lightning__HomePage</target>",
+            "\t<!--<target>lightning__Tab</target>-->",
+            "\t<!--<target>lightning__RecordAction</target>-->",
+            "\t<!--<target>lightning__Inbox</target>-->",
+            "\t<!--<target>lightning__UtilityBar</target>-->",
+            "\t<!--<target>lightning__FlowScreen</target>-->",
+            "\t<!--<target>lightningSnapin__ChatMessage</target>-->",
+            "\t<!--<target>lightningSnapin__Minimized</target>-->",
+            "\t<!--<target>lightningSnapin__PreChat</target>-->",
+            "\t<!--<target>lightningSnapin__ChatHeader</target>-->",
+            "\t<!--<target>lightningCommunity__Page</target>-->",
+            "\t<!--<target>lightningCommunity__Default</target>-->",
+            "\t<!--<target>lightningCommunity__Page_Layout</target>-->",
+            "\t<!--<target>lightningCommunity__Theme_Layout</target>-->",
+            "</targets>"
+        ],
+        "description": "LWC Targets"
+    },
+    "LWC design attributes": {
+        "prefix": "lwc-design-attribute",
+        "body": [
+            "<!-- Configuring the design attributes -->",
+            "<targetConfigs>",
+            "\t<targetConfig targets=\"lightning__HomePage,lightning__RecordPage\">",
+            "\t\t<property name=\"strName\" type=\"String\" default=\"Salesforce Code Crack\" label=\"Enter the Employee Name\"/>",
+            "\t\t<property name=\"showDetails\" type=\"Boolean\" default=\"true\" label=\"Do you want to Show Details ?\"/>",
+            "\t\t<property name=\"empName\" type=\"String\" default=\"\" label=\"Enter Employee Name\"/>",
+            "\t\t<property name=\"empDepartment\" type=\"String\" default=\"\" label=\"Enter Employee Department\"/>",
+            "\t\t<property name=\"empLocation\" type=\"String\" label=\"Enter Employee Location\" datasource=\"Hyderabad, Delhi, Pune, Noida\"/>",
+            "\t\t<property name=\"empAge\" type=\"integer\" label=\"Enter Employee Age\"/>",
+            "\t\t<property name=\"empGender\" type=\"String\" label=\"Enter Employee Gender\" datasource=\"Male, Female\"/>",
+            "\t</targetConfig>",
+            "</targetConfigs>"
+        ],
+        "description": "LWC design attributes"
+    },
+    "Lightning Message Channel": {
+        "prefix": "lwc-messageChannel",
+        "body": [
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+            "<LightningMessageChannel xmlns=\"http://soap.sforce.com/2006/04/metadata\">",
+            "\t<masterLabel>${1:MessageChannelName}</masterLabel>",
+            "\t<isExposed>true</isExposed>",
+            "\t<description>This Lightning Message Channel sends information from...</description>",
+            "\t<lightningMessageFields>",
+            "\t\t<fieldName>${2:fieldName}</fieldName>",
+            "\t\t<description>Message To Send</description>",
+            "\t</lightningMessageFields>\n",
+            "\t<lightningMessageFields>",
+            "\t\t<fieldName>${3:fieldName}</fieldName>",
+            "\t\t<description>My source?</description>",
+            "\t</lightningMessageFields>",
+            "</LightningMessageChannel>"
+        ],
+        "description": "Lightning Message Channel"
+    },
+    "LWC Quick Actions": {
+        "prefix": "lwc-quick-action",
+        "body": [
+            "<targetConfigs>",
+            "\t<targetConfig targets=\"lightning__RecordAction\">",
+            "\t<!--<actionType>Action</actionType>-->",
+            "\t<actionType>ScreenType</actionType>",
+            "</targetConfig>",
+            "</targetConfigs>"
+        ],
+        "description": "LWC Quick Actions"
+    }
+}
